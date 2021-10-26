@@ -36,6 +36,17 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="pausemenu" ID="{034836A3-EEB2-4854-B246-786933754573}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
+						<State Name="pause" ID="{BE608333-DC70-4CAD-9EE1-BBC0B4C93357}"/>
+						<State Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -97,6 +97,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{CBDE0A8B-F388-4865-9B7A-7B86FADDCB3C}" ShortID="517766074">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}" WorkUnitID="{861D8495-A811-4CC3-AE88-F9E370F791C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{03B3901E-0CB3-4AE7-9F41-6841F9D0F9F6}" ShortID="187493547">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>

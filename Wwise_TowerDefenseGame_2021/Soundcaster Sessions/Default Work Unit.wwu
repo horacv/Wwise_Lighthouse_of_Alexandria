@@ -30,8 +30,22 @@
 							<Position X="2" Y="1"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="volume_sfx" ID="{CB358814-8296-4A81-AF45-D00994051D70}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_music" ID="{31E3BD4D-FDE3-4ADB-B115-7D61DC8EE9EF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_master" ID="{71876EEA-1987-4C6D-9B8D-A0129E82E1E6}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
 						<CurrentStateRef Name="night" ID="{636FACFB-5570-44A1-8A7D-49F3E0AFC2AE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
