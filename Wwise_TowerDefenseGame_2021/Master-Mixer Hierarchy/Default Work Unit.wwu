@@ -39,6 +39,9 @@
 								<Bus Name="Ambiences" ID="{1255C2E5-789D-49C7-BCB5-68686EC950B9}">
 									<ObjectLists/>
 								</Bus>
+								<Bus Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}">
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
@@ -54,6 +57,11 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="PA_Announcement1" ID="{65E0ACE4-B404-4485-87A4-5907277D9858}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists/>
 						</AuxBus>
 					</ChildrenList>

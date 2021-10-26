@@ -159,6 +159,36 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Level" ID="{C4BCE6AE-E1C3-4FA2-9E9A-E2E1B6180A56}" ShortID="692076413">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="level_towerbuilding" ID="{1A3E2F10-C4F5-499B-9FCC-9B955B19113E}">
+							<ChildrenList>
+								<Action Name="" ID="{60C1082A-82CB-437F-B700-73C5B278278C}" ShortID="400672076">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tower_Building" ID="{B239CB4F-D15C-4B3C-B289-39FA4DEA5326}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="level_warhorn" ID="{22A4F484-CE0E-4939-8524-00C466C24DFA}">
+							<ChildrenList>
+								<Action Name="" ID="{23D26D7E-313C-4F9B-A898-016466635811}" ShortID="650574741">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
