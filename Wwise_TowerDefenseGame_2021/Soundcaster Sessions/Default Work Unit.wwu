@@ -45,8 +45,39 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
+						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music" ID="{58D35AC1-3CC3-41F3-A7D5-FC71986B6005}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_gamestart" ID="{F539FA8B-D1C0-47A7-AC13-AF51B9A3EFFE}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="volume_sfx" ID="{CB358814-8296-4A81-AF45-D00994051D70}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_music" ID="{31E3BD4D-FDE3-4ADB-B115-7D61DC8EE9EF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_master" ID="{71876EEA-1987-4C6D-9B8D-A0129E82E1E6}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
-						<CurrentStateRef Name="night" ID="{636FACFB-5570-44A1-8A7D-49F3E0AFC2AE}"/>
+						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

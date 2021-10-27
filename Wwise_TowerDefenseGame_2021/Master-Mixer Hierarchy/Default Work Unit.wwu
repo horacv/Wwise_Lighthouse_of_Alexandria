@@ -103,7 +103,7 @@
 						</Bus>
 						<Bus Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="MakeUpGain" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{5EB26230-E39D-4F5F-A887-8B32C6402BDE}" ShortID="232355965">

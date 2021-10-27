@@ -39,6 +39,7 @@
 				<StateGroup Name="pausemenu" ID="{034836A3-EEB2-4854-B246-786933754573}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.25"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>

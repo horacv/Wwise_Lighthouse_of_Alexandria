@@ -85,6 +85,19 @@
 					<ChildrenList>
 						<Event Name="play_gamestart" ID="{F539FA8B-D1C0-47A7-AC13-AF51B9A3EFFE}">
 							<ChildrenList>
+								<Action Name="" ID="{BDB4B30D-0A59-4DA2-819F-9BF8E34F0D24}" ShortID="596531209">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{1DF4BF10-07BE-4C77-9ABE-668B1E0ECB6D}" ShortID="154227904">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -121,6 +134,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="DayTIme" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}">
+							<ChildrenList>
+								<Action Name="" ID="{368E7004-90BA-4D02-9C7E-48DCF82CA860}" ShortID="981604436">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{2708D7ED-FE72-4731-9887-436F0414F324}" ShortID="518938005">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}" WorkUnitID="{861D8495-A811-4CC3-AE88-F9E370F791C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{30D7226D-A7E7-43FB-BF87-69AEBEC1652A}" ShortID="974848130">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
