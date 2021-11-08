@@ -77,7 +77,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
-									<ObjectRef Name="New_Wwise_Gain" ID="{445B6543-3F05-49C7-A8AF-A6B18E6749C9}" WorkUnitID="{BA70712F-9982-44B2-9ED3-21BFAD5B143D}"/>
+									<ObjectRef Name="FX_Gain_Mute" ID="{8614813B-8E79-4143-9494-5D8D8F1C94E5}" WorkUnitID="{BA70712F-9982-44B2-9ED3-21BFAD5B143D}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -134,6 +134,11 @@
 								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<ObjectRef Name="Music_Gain_Mute" ID="{6C99EBCD-A254-4283-A5A1-081092EF1187}" WorkUnitID="{BA70712F-9982-44B2-9ED3-21BFAD5B143D}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists/>
 						</Bus>
 						<AuxBus Name="Reverb" ID="{57652ECC-98E8-47A5-8614-6A93B95804C3}">
@@ -172,8 +177,8 @@
 								<StateRef Name="pause" ID="{BE608333-DC70-4CAD-9EE1-BBC0B4C93357}"/>
 								<CustomState Name="" ID="{BF371E3E-A6CA-4228-988F-BF4681A95CE6}" ShortID="700338461">
 									<PropertyList>
-										<Property Name="BusVolume" Type="Real64" Value="-5"/>
-										<Property Name="Lowpass" Type="int16" Value="45"/>
+										<Property Name="BusVolume" Type="Real64" Value="-8"/>
+										<Property Name="Lowpass" Type="int16" Value="30"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>

@@ -48,6 +48,30 @@
 						<State Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="musicmute" ID="{294B5360-9D9C-4971-89C1-485A6034AEDE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C0251193-E33A-4D0F-A131-02E23B5CFB6D}"/>
+						<State Name="on" ID="{ECC43F45-06C0-48F2-8721-81121AE82991}"/>
+						<State Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="sfxmute" ID="{17360D23-7371-4453-8697-8E25EB1425CF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{20393190-997A-451E-8F53-8BCF5F7FF3B8}"/>
+						<State Name="on" ID="{1FC7732B-538E-4116-ACCD-36466FB84443}"/>
+						<State Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
