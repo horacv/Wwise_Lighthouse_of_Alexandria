@@ -78,7 +78,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
 						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
-						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
+						<CurrentStateRef Name="notime" ID="{31922188-D5F5-4F74-946D-2833C2AF7883}"/>
 						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

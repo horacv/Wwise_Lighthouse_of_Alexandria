@@ -139,6 +139,17 @@
 									<ObjectRef Name="Music_Gain_Mute" ID="{6C99EBCD-A254-4283-A5A1-081092EF1187}" WorkUnitID="{BA70712F-9982-44B2-9ED3-21BFAD5B143D}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="DayMusic" ID="{3B5EDA19-686E-43A8-AC44-EE10A1EA9CBC}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="NightMusic" ID="{FED4402B-CC64-41E2-9339-C1606A0D78F7}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="ThemeMusic" ID="{8BF22FA0-83DD-46E4-BE53-4ADA9C8DCC43}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
 						<AuxBus Name="Reverb" ID="{57652ECC-98E8-47A5-8614-6A93B95804C3}">

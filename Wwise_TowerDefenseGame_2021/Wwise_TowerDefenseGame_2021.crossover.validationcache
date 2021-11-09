@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Wwise_TowerDefenseGame_2021.wproj" DateLow="1636249818" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Wwise_TowerDefenseGame_2021.crossover.wsettings" DateLow="1636249818" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Wwise_TowerDefenseGame_2021.crossover.wsettings" DateLow="1636466663" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Virtual Acoustics\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Triggers\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Switches\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\States\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\States\Default Work Unit.wwu" DateLow="1636405155" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1636408358" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\SoundBanks\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Queries\Factory Queries.wwu" DateLow="1636249818" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Queries\Default Work Unit.wwu" DateLow="1636249818" DateHigh="0"/>
@@ -15,10 +15,10 @@
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Modulators\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Mixing Sessions\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Metadata\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636408358" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1636408358" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Game Parameters\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Events\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Events\Default Work Unit.wwu" DateLow="1636404487" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory Mastering Suite.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1636249816" DateHigh="0"/>
@@ -30,7 +30,7 @@
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory Effects.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory Convolution Reverb Effects Stereo.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Factory Convolution Reverb Effects Ambisonics.wwu" DateLow="1636249816" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Effects\Default Work Unit.wwu" DateLow="1636404111" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1636249816" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Projects\6. REPOSITORIES\Wwise_Lighthouse_of_Alexandria\Wwise_TowerDefenseGame_2021\Conversion Settings\Default Work Unit.wwu" DateLow="1636249816" DateHigh="0"/>

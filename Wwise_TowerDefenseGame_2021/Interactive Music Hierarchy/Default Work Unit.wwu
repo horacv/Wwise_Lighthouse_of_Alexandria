@@ -21,6 +21,7 @@
 						<MusicPlaylistContainer Name="Night" ID="{4D55CEB8-C0C5-4A25-85D4-FEE0407563FB}" ShortID="78000064">
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="125"/>
 							</PropertyList>
 							<ReferenceList>
@@ -28,7 +29,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+									<ObjectRef Name="NightMusic" ID="{FED4402B-CC64-41E2-9339-C1606A0D78F7}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -142,7 +143,7 @@
 																									</Point>
 																									<Point>
 																										<XPos>86.28</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -292,7 +293,7 @@
 																									</Point>
 																									<Point>
 																										<XPos>86.28</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -383,22 +384,24 @@
 						<MusicPlaylistContainer Name="Day" ID="{E255D840-B0BE-4833-9227-2AE0B0DE1663}" ShortID="673287326">
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="85"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+									<ObjectRef Name="DayMusic" ID="{3B5EDA19-686E-43A8-AC44-EE10A1EA9CBC}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Black_Night_120bpm" ID="{A22D3B81-0AE9-45E2-AF3C-435BFB914B98}" ShortID="618437951">
+								<MusicSegment Name="AlejandriasLibrary_85bpm_Intro" ID="{1FA75B0D-B69C-4BB4-B67B-FBC704A4CB33}" ShortID="775330457">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="101054.94812864"/>
-										<Property Name="MakeUpGain" Type="Real64">
+										<Property Name="EndPosition" Type="Real64" Value="163917.249566493"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -407,27 +410,27 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Tower Defence - Track 6 - Black Knight" ID="{CB2EA235-FC37-4FF2-9EEE-539EBED33D1D}" ShortID="692836312">
+										<MusicTrack Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{F7A14A5C-321B-4B55-AA68-2A89B05E7943}" ShortID="798565185">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Tower Defence - Track 6 - Black Knight" ID="{A12122F3-C6F4-4C10-B26E-CDDC83E4E4E7}">
+												<AudioFileSource Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{A49D7571-3C27-4E08-A381-A8816A066953}">
 													<Language>SFX</Language>
-													<AudioFile>Tower Defence - Track 6 - Black Knight.wav</AudioFile>
+													<AudioFile>Tower Defence - Track 2 - Alejandria´s Library_85BPM_C.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="100408995"/>
+														<MediaID ID="727272802"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{DBD4B0C3-3565-4515-95F8-9D8353DE4613}">
+												<MusicTransition Name="Root" ID="{59EDBC65-0DBC-447D-AE4A-26E1685A5D9B}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -438,34 +441,34 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{3BAC04A0-4CF6-4516-A590-7AA7B32E962F}">
+															<MusicTrackSequence Name="" ID="{465EA31D-6D2D-4281-B4C6-73B648983906}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Tower Defence - Track 6 - Black Knight" ID="{B1E3548A-3744-4EBA-A9D7-A006E50E5E53}">
+																				<MusicClip Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{14639AD2-2F05-4E46-AF17-63A3441DF996}">
 																					<PropertyList>
-																						<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="82000"/>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="2470.58823529412"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14470.5882352941"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="2078.79403360581"/>
-																						<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-2470.58823529412"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Tower Defence - Track 6 - Black Knight" ID="{A12122F3-C6F4-4C10-B26E-CDDC83E4E4E7}"/>
+																					<AudioSourceRef Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{A49D7571-3C27-4E08-A381-A8816A066953}"/>
 																					<PropertyCurveList>
 																						<PropertyCurve PropertyName="Highpass">
-																							<Curve Name="" ID="{1798315D-E2E8-4284-A756-B3E19E7D3742}">
+																							<Curve Name="" ID="{EB4C3876-C7E0-4273-B935-2B45C6B8A5AE}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="1"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>2</XPos>
+																										<XPos>2.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>82</XPos>
+																										<XPos>14.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -473,18 +476,18 @@
 																							</Curve>
 																						</PropertyCurve>
 																						<PropertyCurve PropertyName="Lowpass">
-																							<Curve Name="" ID="{807911E9-6A16-4CAB-BCD3-2E715B8E50B9}">
+																							<Curve Name="" ID="{B9B8AAE4-42AF-4387-B37E-01B7B97B2A80}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="1"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>2</XPos>
+																										<XPos>2.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>82</XPos>
+																										<XPos>14.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -492,18 +495,18 @@
 																							</Curve>
 																						</PropertyCurve>
 																						<PropertyCurve PropertyName="Volume">
-																							<Curve Name="" ID="{FBCBBE2A-5FAF-497D-91B9-6F732F338CA3}">
+																							<Curve Name="" ID="{AAFB6187-5031-40C5-963C-CA0FEF057D94}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>2</XPos>
+																										<XPos>2.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>82</XPos>
+																										<XPos>14.47059</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -527,15 +530,318 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{92F63275-FF89-4E4E-B0CD-70433944E273}"/>
+													<MusicCue Name="Entry Cue" ID="{10CB1543-2765-4369-BDC4-C127F84C3C18}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{2A91B3E0-A0B8-450D-A8FE-47E3144A2B18}">
+													<MusicCue Name="Exit Cue" ID="{976152D1-4ECC-4411-B2EF-15F9EAE15817}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="77939.743310181"/>
+															<Property Name="TimeMs" Type="Real64" Value="12000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="AlejandriasLibrary_85bpm_Loop" ID="{F3AE6CE9-930C-4F2E-8FE8-67C0DC4A9860}" ShortID="552900362">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="163917.249566493"/>
+										<Property Name="Tempo" Type="Real64" Value="85"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{F1FEF642-5F91-4736-BC9D-7CC39A508410}" ShortID="231134584">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{3EDF623B-66CF-4E2B-B954-3609064D23E9}">
+													<Language>SFX</Language>
+													<AudioFile>Tower Defence - Track 2 - Alejandria´s Library_85BPM_C.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="727272802"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AD99FF20-459F-4236-82D3-B1D5A9886505}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D9595B67-2D32-4650-A364-DAB0A816DECB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{5585C6A6-DA2F-4F2A-A28C-AF1461BE06C4}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="14470.5882352941"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="86470.5882352941"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="31.9508906083774"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-14470.5882352941"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{3EDF623B-66CF-4E2B-B954-3609064D23E9}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{24D7F959-417F-4060-935D-869B754D8D74}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>14.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{DE140C95-6E21-4E68-AEB0-31E06F08841B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>14.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{F5ADB4ED-0FB3-49E0-8B83-6FEF3B0CEAD0}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>14.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{86386475-2281-4125-BDFD-22E01D42FFFC}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F4171FA9-D183-464A-B9E5-0FB105BAB5E6}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="72000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="AlejandriasLibrary_85bpm_Loop_Ending" ID="{1391E3B7-CE67-429A-9C1D-26BA30CC3440}" ShortID="873814271">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="167281.948023873"/>
+										<Property Name="Tempo" Type="Real64" Value="85"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{B2639CA1-15DC-457E-9B5B-2E6DB341A187}" ShortID="170683517">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{BD275962-5136-4111-BACE-4BD3DF565766}">
+													<Language>SFX</Language>
+													<AudioFile>Tower Defence - Track 2 - Alejandria´s Library_85BPM_C.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="727272802"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DFDA9D99-DAF8-4045-9E57-655B14D6C3F7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{32740230-82DD-4394-AA57-CDD8F90B4431}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{7D6A8203-F6AE-472B-932F-B851BA8CBB90}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="86470.5882352941"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="136588.235294118"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="10.1805384011216"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="2095.36208787518"/>
+																						<Property Name="FadeOutShape" Type="int16" Value="2"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-86470.5882352941"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Tower Defence - Track 2 - Alejandria´s Library_85BPM_C" ID="{BD275962-5136-4111-BACE-4BD3DF565766}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{EA7BA923-57A3-42B8-8005-D20929C7BFCA}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>136.58824</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{921181B5-0A58-41AD-B880-B605639FD413}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>136.58824</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{176EB460-ACAF-4439-910D-FD548835A191}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>86.47059</XPos>
+																										<YPos>-0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>136.58824</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{87573B88-E773-4333-8A6E-D7AAE0CDE599}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F48ADBCA-48B1-403B-B32A-165DEF781DF8}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="48000"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -553,7 +859,6 @@
 										<MusicTransition Name="Transition" ID="{4B2121EF-B4EF-4FE0-8A09-55C3E653926B}">
 											<PropertyList>
 												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
-												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 											</PropertyList>
 											<TransitionInfo/>
 										</MusicTransition>
@@ -564,15 +869,43 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{F27BEBF2-F615-4AEB-8740-8EA5240C89B8}" ShortID="470713635">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
 									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{AC1E54F4-9BA3-4975-BC02-31AF979916E8}" ShortID="161439781">
+										<MusicPlaylistItem Name="" ID="{CD4508F7-977F-4C66-B24D-AE0AA8C29242}" ShortID="719640727">
 											<PropertyList>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
-											<SegmentRef Name="Black_Night_120bpm" ID="{A22D3B81-0AE9-45E2-AF3C-435BFB914B98}"/>
+											<SegmentRef Name="AlejandriasLibrary_85bpm_Intro" ID="{1FA75B0D-B69C-4BB4-B67B-FBC704A4CB33}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{B24B1FFD-3A34-4EF8-AB0D-CA2C3C81506F}" ShortID="183552120">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{806456E0-228F-47E0-B378-A11866AF43A1}" ShortID="1004223051">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{482D9D23-522F-483B-9C98-3847614AF915}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="AlejandriasLibrary_85bpm_Loop" ID="{F3AE6CE9-930C-4F2E-8FE8-67C0DC4A9860}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{CC9D00A0-B87D-46AD-B9DC-58E03750D32F}" ShortID="1044058777">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="AlejandriasLibrary_85bpm_Loop_Ending" ID="{1391E3B7-CE67-429A-9C1D-26BA30CC3440}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
@@ -618,8 +951,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{9937EE97-F5BC-447B-9B5F-1F017A25904A}">
 												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
 													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -670,7 +1004,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+							<ObjectRef Name="ThemeMusic" ID="{8BF22FA0-83DD-46E4-BE53-4ADA9C8DCC43}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
