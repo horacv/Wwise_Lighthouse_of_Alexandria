@@ -1,17 +1,43 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	153626945	musicmute			\Default Work Unit\musicmute	
+	1264305561	sfxmute			\Default Work Unit\sfxmute	
+	3494343696	pausemenu			\Default Work Unit\pausemenu	
 	4206605382	daytime			\Default Work Unit\daytime	
 
 State	ID	Name	State Group			Notes
+	748895195	None	musicmute			
+	930712164	off	musicmute			
+	1651971902	on	musicmute			
+	748895195	None	sfxmute			
+	930712164	off	sfxmute			
+	1651971902	on	sfxmute			
+	748895195	None	pausemenu			
+	1658147866	nopause	pausemenu			
+	3092587493	pause	pausemenu			
 	311764537	day	daytime			
 	748895195	None	daytime			
 	1011622525	night	daytime			
 	2947967655	notime	daytime			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	110791540	on	musicmute	\Effects\Default Work Unit\Music_Gain_Mute		
+	700338461	pause	pausemenu	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	709010095	on	sfxmute	\Effects\Default Work Unit\FX_Gain_Mute		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3673881719	volume_sfx			\Default Work Unit\volume_sfx	
+	3695994288	volume_master			\Default Work Unit\volume_master	
+	3891337659	volume_music			\Default Work Unit\volume_music	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	450773281	ThemeMusic			\Default Work Unit\Master Audio Bus\Music\ThemeMusic	
 	1017660616	Ambiences			\Default Work Unit\Master Audio Bus\FX\Ambiences	
+	1030219198	NightMusic			\Default Work Unit\Master Audio Bus\Music\NightMusic	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\FX\UI	
 	1802970371	FX			\Default Work Unit\Master Audio Bus\FX	
 	1982534943	Towers			\Default Work Unit\Master Audio Bus\FX\Towers	
+	2782712965	Level			\Default Work Unit\Master Audio Bus\FX\Level	
+	3231935906	DayMusic			\Default Work Unit\Master Audio Bus\Music\DayMusic	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
@@ -19,7 +45,10 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1415568901	FX_Gain_Mute	Wwise Gain			
 	1865172355	New_Wwise_Gain	Wwise Gain			
+	2286723812	Music_Gain_Mute	Wwise Gain			
+	2656259783	PA_Announcement1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

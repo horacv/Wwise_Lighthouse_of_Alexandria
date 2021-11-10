@@ -1,28 +1,613 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Lighthouse-of-Alexandria/Wwise_TowerDefenseGame_2021/</ProjectRoot>
-		<SourceFilesRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Lighthouse-of-Alexandria/Wwise_TowerDefenseGame_2021/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Lighthouse-of-Alexandria/Wwise_TowerDefenseGame_2021/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Wwise_Lighthouse_of_Alexandria/Wwise_TowerDefenseGame_2021/</ProjectRoot>
+		<SourceFilesRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Wwise_Lighthouse_of_Alexandria/Wwise_TowerDefenseGame_2021/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Wwise_Lighthouse_of_Alexandria/Wwise_TowerDefenseGame_2021/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Lighthouse-of-Alexandria/Wwise_TowerDefenseGame_2021/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/Wwise_Lighthouse_of_Alexandria/Wwise_TowerDefenseGame_2021/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3128377116">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1805337331">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="volume_sfx" ObjectPath="\Game Parameters\Default Work Unit\volume_sfx"/>
+				<GameParameter Id="3695994288" Name="volume_master" ObjectPath="\Game Parameters\Default Work Unit\volume_master"/>
+				<GameParameter Id="3891337659" Name="volume_music" ObjectPath="\Game Parameters\Default Work Unit\volume_music"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3494343696" Name="pausemenu" ObjectPath="\States\Default Work Unit\pausemenu" GUID="{034836A3-EEB2-4854-B246-786933754573}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\pausemenu\None" GUID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
+						<State Id="3092587493" Name="pause" ObjectPath="\States\Default Work Unit\pausemenu\pause" GUID="{BE608333-DC70-4CAD-9EE1-BBC0B4C93357}"/>
+						<State Id="1658147866" Name="nopause" ObjectPath="\States\Default Work Unit\pausemenu\nopause" GUID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1077138683">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4276316125">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="354991228" Name="attack_archertower" ObjectPath="\Events\Default Work Unit\Towers\attack_archertower" DurationType="OneShot" DurationMin="0.592634" DurationMax="0.627874">
+					<IncludedMemoryFiles>
+						<File Id="86581746" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="161270030" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="175793701" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="182805467" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="645384186" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="794478279" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="999775811" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1007077134" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1011509902" Language="SFX">
+							<ShortName>sx_int_tower_arrowAttack_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_arrowAttack_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1825859782" Name="attack_cannontower" ObjectPath="\Events\Default Work Unit\Towers\attack_cannontower" DurationType="OneShot" DurationMin="7.764503" DurationMax="8.226226">
+					<IncludedMemoryFiles>
+						<File Id="118339375" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="201714164" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="319132400" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="507774949" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="543063026" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="642483152" Language="SFX">
+							<ShortName>sx_int_fire_cannon_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_fire_cannon_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="781691411" Name="attack_crossbowtower" ObjectPath="\Events\Default Work Unit\Towers\attack_crossbowtower" DurationType="OneShot" DurationMin="0.641839" DurationMax="0.696816">
+					<IncludedMemoryFiles>
+						<File Id="26805638" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer4_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer4_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="31583875" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer4_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer4_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="71418589" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="74264752" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="217740911" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="322624274" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="618587153" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer4_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer4_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="723008495" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="749147611" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="879332919" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="919539601" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="970763471" Language="SFX">
+							<ShortName>sx_int_tower_crossbowAttack_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_int_tower_crossbowAttack_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3851137378" Name="impact_archertower" ObjectPath="\Events\Default Work Unit\Towers\impact_archertower" DurationType="OneShot" DurationMin="0.704927" DurationMax="0.746845">
+					<IncludedMemoryFiles>
+						<File Id="4429609" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="198362303" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="377436176" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="428885810" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer4_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer4_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="445487554" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="505183600" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="636337360" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer4_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer4_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="702748778" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="711954692" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="794279722" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer4_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer4_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1023105407" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1062583863" Language="SFX">
+							<ShortName>sx_int_impact_arrow_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_arrow_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3210611180" Name="impact_cannontower" ObjectPath="\Events\Default Work Unit\Towers\impact_cannontower" DurationType="OneShot" DurationMin="4.925505" DurationMax="5.218391">
+					<IncludedMemoryFiles>
+						<File Id="46446198" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="188514219" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="190365509" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="268849406" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="297615559" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="312032307" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="396151193" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="582548078" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="783061586" Language="SFX">
+							<ShortName>sx_int_impact_cannon_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_cannon_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="259899085" Name="impact_crossbowtower" ObjectPath="\Events\Default Work Unit\Towers\impact_crossbowtower" DurationType="OneShot" DurationMin="0.800907" DurationMax="0.848531">
+					<IncludedMemoryFiles>
+						<File Id="193564904" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer4_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer4_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="219121845" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="249867381" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer4_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer4_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="293763862" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer4_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer4_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="327906251" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="449208313" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="571599674" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="583259747" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="720415582" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="750524666" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="857685213" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="930054859" Language="SFX">
+							<ShortName>sx_int_impact_crossbow_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_int_impact_crossbow_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3525318799" Name="level_towerbuilding" ObjectPath="\Events\Default Work Unit\Level\level_towerbuilding" DurationType="OneShot" DurationMin="2.660531" DurationMax="2.738490">
+					<IncludedMemoryFiles>
+						<File Id="23313080" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer4_1.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer4_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="72281730" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="78603502" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="289413445" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="311307962" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="333369411" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer3_3.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer3_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="353499642" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer4_2.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer4_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="825525082" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="848034090" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="863378449" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1039678122" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1058036836" Language="SFX">
+							<ShortName>sx_level_tower_building_Layer4_3.wav</ShortName>
+							<Path>SFX/sx_level_tower_building_Layer4_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3676066613" Name="level_warhorn" ObjectPath="\Events\Default Work Unit\Level\level_warhorn" DurationType="OneShot" DurationMin="4.777563" DurationMax="4.777563">
+					<IncludedMemoryFiles>
+						<File Id="174120956" Language="SFX">
+							<ShortName>sx_night_play_WarHorn.wav</ShortName>
+							<Path>SFX/sx_night_play_WarHorn_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1497459184" Name="play_gamestart" ObjectPath="\Events\Default Work Unit\Global_Game_Events\play_gamestart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="2334132" Language="SFX">
+							<ShortName>sx_day_amb_Wind.wav</ShortName>
+							<Path>SFX/sx_day_amb_Wind_F0D204D0.wem</Path>
+						</File>
+						<File Id="99678118" Language="SFX">
+							<ShortName>sx_day_amb_Seals_2.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="242814254" Language="SFX">
+							<ShortName>sx_day_amb_SeaST_3.wav</ShortName>
+							<Path>SFX/sx_day_amb_SeaST_3_B0CFF7F9.wem</Path>
+						</File>
+						<File Id="293898816" Language="SFX">
+							<ShortName>sx_night_amb_Insects_6.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_6_3F75BDB9.wem</Path>
+						</File>
+						<File Id="298152628" Language="SFX">
+							<ShortName>sx_night_amb_Insects_3.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="311819684" Language="SFX">
+							<ShortName>sx_day_amb_Seals_9.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_9_3F75BDB9.wem</Path>
+						</File>
+						<File Id="339874632" Language="SFX">
+							<ShortName>sx_day_amb_Seals_4.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="361965801" Language="SFX">
+							<ShortName>sx_night_amb_Wind.wav</ShortName>
+							<Path>SFX/sx_night_amb_Wind_058B0F50.wem</Path>
+						</File>
+						<File Id="407264804" Language="SFX">
+							<ShortName>sx_night_amb_Insects_2.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="419801696" Language="SFX">
+							<ShortName>sx_night_amb_Flies.wav</ShortName>
+							<Path>SFX/sx_night_amb_Flies_99E6FF19.wem</Path>
+						</File>
+						<File Id="491991793" Language="SFX">
+							<ShortName>sx_night_amb_SeaAmbi_1.wav</ShortName>
+							<Path>SFX/sx_night_amb_SeaAmbi_1_4E1B7F40.wem</Path>
+						</File>
+						<File Id="509981338" Language="SFX">
+							<ShortName>sx_night_amb_Insects_5.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_5_3F75BDB9.wem</Path>
+						</File>
+						<File Id="538925918" Language="SFX">
+							<ShortName>sx_day_amb_Seals_7.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_7_3F75BDB9.wem</Path>
+						</File>
+						<File Id="544921695" Language="SFX">
+							<ShortName>sx_day_amb_SeaAmbi_1.wav</ShortName>
+							<Path>SFX/sx_day_amb_SeaAmbi_1_949EB0D6.wem</Path>
+						</File>
+						<File Id="551371051" Language="SFX">
+							<ShortName>sx_day_amb_Seals_8.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_8_3F75BDB9.wem</Path>
+						</File>
+						<File Id="552500343" Language="SFX">
+							<ShortName>sx_night_amb_SeaAmbi_2.wav</ShortName>
+							<Path>SFX/sx_night_amb_SeaAmbi_2_CFC08D7A.wem</Path>
+						</File>
+						<File Id="572807447" Language="SFX">
+							<ShortName>sx_night_amb_SeaST_3.wav</ShortName>
+							<Path>SFX/sx_night_amb_SeaST_3_3DDFA38F.wem</Path>
+						</File>
+						<File Id="649234642" Language="SFX">
+							<ShortName>sx_night_amb_CricketsST_2.wav</ShortName>
+							<Path>SFX/sx_night_amb_CricketsST_2_6B9C5CCD.wem</Path>
+						</File>
+						<File Id="779218760" Language="SFX">
+							<ShortName>sx_night_amb_Insects_4.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="787851623" Language="SFX">
+							<ShortName>sx_day_amb_Seals_5.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_5_3F75BDB9.wem</Path>
+						</File>
+						<File Id="797120479" Language="SFX">
+							<ShortName>sx_night_amb_Insects_7.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_7_3F75BDB9.wem</Path>
+						</File>
+						<File Id="922505807" Language="SFX">
+							<ShortName>sx_day_amb_Seals_1.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="924569687" Language="SFX">
+							<ShortName>sx_day_amb_Seagulls_1.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seagulls_1_307F3CD6.wem</Path>
+						</File>
+						<File Id="975823092" Language="SFX">
+							<ShortName>sx_night_amb_Insects_1.wav</ShortName>
+							<Path>SFX/sx_night_amb_Insects_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="988744189" Language="SFX">
+							<ShortName>sx_day_amb_SeaAmbi_2.wav</ShortName>
+							<Path>SFX/sx_day_amb_SeaAmbi_2_7CD48AD8.wem</Path>
+						</File>
+						<File Id="1001900288" Language="SFX">
+							<ShortName>sx_day_amb_BirdsNature.wav</ShortName>
+							<Path>SFX/sx_day_amb_BirdsNature_39477C17.wem</Path>
+						</File>
+						<File Id="1036098363" Language="SFX">
+							<ShortName>sx_day_amb_Seagulls_2.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seagulls_2_1BCF7816.wem</Path>
+						</File>
+						<File Id="1051087115" Language="SFX">
+							<ShortName>sx_night_amb_CricketsAmbi_1.wav</ShortName>
+							<Path>SFX/sx_night_amb_CricketsAmbi_1_C11FE817.wem</Path>
+						</File>
+						<File Id="1052485101" Language="SFX">
+							<ShortName>sx_day_amb_Seals_3.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1054044980" Language="SFX">
+							<ShortName>sx_day_amb_Seals_6.wav</ShortName>
+							<Path>SFX/sx_day_amb_Seals_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="311764537" Name="day" ObjectPath="\States\Default Work Unit\daytime\day"/>
+						<ActionSetStateEntry Id="1658147866" Name="nopause" ObjectPath="\States\Default Work Unit\pausemenu\nopause"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1699343283" Name="play_music_menu" ObjectPath="\Events\Default Work Unit\Global_Game_Events\play_music_menu" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="100408995" Language="SFX">
+							<ShortName>Tower Defence - Track 6 - Black Knight.wav</ShortName>
+							<Path>SFX/Tower Defence - Track 6 - Black Knight_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="1658147866" Name="nopause" ObjectPath="\States\Default Work Unit\pausemenu\nopause"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3915957147" Name="ui_button_buttonupgrade" ObjectPath="\Events\Default Work Unit\UI\ui_button_buttonupgrade" DurationType="OneShot" DurationMin="1.647407" DurationMax="1.730523">
+					<IncludedMemoryFiles>
+						<File Id="34910135" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="184626511" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="383764927" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="648996008" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer3_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer3_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="701810073" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="721868370" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="731271026" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer3_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer3_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="864341479" Language="SFX">
+							<ShortName>sx_ui_click_upgradebutton_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_upgradebutton_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1002453035" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1042871076" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1664509575" Name="ui_button_click" ObjectPath="\Events\Default Work Unit\UI\ui_button_click" DurationType="OneShot" DurationMin="0.510095" DurationMax="0.540427">
+					<IncludedMemoryFiles>
+						<File Id="184626511" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="383764927" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1002453035" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1042871076" Language="SFX">
+							<ShortName>sx_ui_click_button_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_ui_click_button_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="610582865" Name="ui_button_hover" ObjectPath="\Events\Default Work Unit\UI\ui_button_hover" DurationType="OneShot" DurationMin="0.195521" DurationMax="0.207169">
+					<IncludedMemoryFiles>
+						<File Id="43339676" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer2_1.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer2_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="249333721" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer1_1.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer1_1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="404432004" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer1_3.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer1_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="465929706" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer2_2.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer2_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="672085957" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer2_3.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer2_3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="926342653" Language="SFX">
+							<ShortName>sx_ui_hover_button_Layer1_2.wav</ShortName>
+							<Path>SFX/sx_ui_hover_button_Layer1_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="311764537" Name="day" ObjectPath="\States\Default Work Unit\daytime\day" GUID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1658147866" Name="nopause" ObjectPath="\States\Default Work Unit\pausemenu\nopause" GUID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
