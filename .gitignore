@@ -24,3 +24,5 @@ Wwise_TowerDefenseGame_2021/GeneratedSoundBanks
 *.validationcache
 *.validationcache
 .DS_Store
+*.validationcache
+*.wsettings
