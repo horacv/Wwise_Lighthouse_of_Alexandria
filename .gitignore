@@ -4,6 +4,10 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
+Wwise_TowerDefenseGame_2021/.cache
+Wwise_TowerDefenseGame_2021/GeneratedSoundBanks
+*.wsettings
+
 # Other files and folders
 .settings/
 
