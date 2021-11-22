@@ -4522,6 +4522,82 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<Sound Name="Button_ResearchStart" ID="{5895C139-85D2-47DE-99BA-B7B0D189B7DB}" ShortID="726630275">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_ui_click_researchstartlayer1_1" ID="{ECE10B78-BE90-43B0-BF25-39381F355B39}">
+									<Language>SFX</Language>
+									<AudioFile>sx_ui_click_researchstartlayer1_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="278134384"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_ui_click_researchstartlayer1_1" ID="{ECE10B78-BE90-43B0-BF25-39381F355B39}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Button_ResearchEnd" ID="{58B04AED-88FF-4D8A-8807-908F675DEFD7}" ShortID="755439095">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-120</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_ui_click_researchendlayer1_1" ID="{904B3857-D8A8-4E89-9A01-45B7AEBD302F}">
+									<Language>SFX</Language>
+									<AudioFile>sx_ui_click_researchendlayer1_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="99388531"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_ui_click_researchendlayer1_1" ID="{904B3857-D8A8-4E89-9A01-45B7AEBD302F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Button_NoMoney" ID="{20D94A1E-EB18-4ED1-B358-66610961B5E7}" ShortID="63656350">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_ui_click_nomoney" ID="{C71B0C24-BA72-46CC-AB2B-9A3B786C600F}">
+									<Language>SFX</Language>
+									<AudioFile>sx_ui_click_nomoney.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1033428841"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_ui_click_nomoney" ID="{C71B0C24-BA72-46CC-AB2B-9A3B786C600F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -5010,6 +5086,393 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+						<BlendContainer Name="Player_LifeDecrease" ID="{23D60B45-1934-4B7C-B87C-2090AC092C46}" ShortID="521237427">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI" ID="{C8DBADF2-1F0B-4340-8E08-04034DCDC1FC}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{57652ECC-98E8-47A5-8614-6A93B95804C3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sx_level_lifedecrease_Layer1" ID="{F4FFA2C0-5F3F-4F46-A6D6-3E8A163BEF24}" ShortID="488257658">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B95CBCB8-A3CE-46C0-9958-C64B80B64E64}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_level_lifedecrease_Layer1" ID="{DADB9AC9-AA75-4904-BD79-6F653CE74B6C}">
+											<Language>SFX</Language>
+											<AudioFile>Life Decrease\sx_level_lifedecrease_Layer1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="462957469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_level_lifedecrease_Layer1" ID="{DADB9AC9-AA75-4904-BD79-6F653CE74B6C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sx_level_lifedecrease_Layer2" ID="{41A07304-FA76-4E58-8CD3-D242053EA21E}" ShortID="127657130">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_level_lifedecrease_Layer2" ID="{50693DD6-4B4F-43DC-BECA-71D9CA8FBAEE}">
+											<Language>SFX</Language>
+											<AudioFile>Life Decrease\sx_level_lifedecrease_Layer2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="431380741"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_level_lifedecrease_Layer2" ID="{50693DD6-4B4F-43DC-BECA-71D9CA8FBAEE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+						<BlendContainer Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" ShortID="794276207">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="PeakLimiter_RockWalls" ID="{E8DEA943-570E-41A0-B867-12A17FC04ADA}" WorkUnitID="{BA70712F-9982-44B2-9ED3-21BFAD5B143D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{57652ECC-98E8-47A5-8614-6A93B95804C3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Layer 1" ID="{0015A737-47C2-44CE-A508-65E23804F480}" ShortID="489258011">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sx_level_wallcollapse_Layer1_1" ID="{866FF72F-5968-44D8-BA82-06DE35B70CF6}" ShortID="81613808">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer1_1" ID="{9CFD1E5F-3049-4511-9114-54A6B51CFE6B}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer1_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471036830"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer1_1" ID="{9CFD1E5F-3049-4511-9114-54A6B51CFE6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer1_2" ID="{432E6BBD-8EE1-4AAF-84AA-49642254B042}" ShortID="1030187188">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer1_2" ID="{7119441F-96EE-4165-BC5B-1B10DBD3AF9A}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer1_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="990414960"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer1_2" ID="{7119441F-96EE-4165-BC5B-1B10DBD3AF9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer1_3" ID="{2F2298AE-9C08-47A8-A897-C07CCA589E8A}" ShortID="496645521">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer1_3" ID="{E0609FA3-95CB-4DDA-9A13-B92CD0EBB485}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer1_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1006757336"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer1_3" ID="{E0609FA3-95CB-4DDA-9A13-B92CD0EBB485}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Layer 2" ID="{26BAB51F-3D4C-4F9E-834C-D1E91256A458}" ShortID="528265439">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sx_level_wallcollapse_Layer2_1" ID="{92C0A628-1213-4B4E-A245-4FA20DA1489E}" ShortID="582343683">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer2_1" ID="{A08C40BD-07AE-4787-BBFE-B7AA3C613BEE}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer2_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="633407927"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer2_1" ID="{A08C40BD-07AE-4787-BBFE-B7AA3C613BEE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer2_2" ID="{2C6E7547-EC11-4A45-89D4-69CE8156EDF5}" ShortID="978655702">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer2_2" ID="{20B63A75-0207-404B-A589-049752329CD7}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer2_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="216070691"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer2_2" ID="{20B63A75-0207-404B-A589-049752329CD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer2_3" ID="{6A9621C5-32D1-439C-99D5-5E84375DEB38}" ShortID="277174717">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer2_3" ID="{F0AC4889-17E7-4679-8F4A-DC22EBF36B3E}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer2_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="552438564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer2_3" ID="{F0AC4889-17E7-4679-8F4A-DC22EBF36B3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Layer 3" ID="{0503FB3D-A04B-4F29-A81B-427C4E273E53}" ShortID="466425552">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sx_level_wallcollapse_Layer3_1" ID="{6DC92576-6BFE-4728-9EC3-4CF6D726114C}" ShortID="87151064">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer3_1" ID="{E7D38DE0-8858-4C81-B86A-4146A042F9CB}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer3_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="330343771"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer3_1" ID="{E7D38DE0-8858-4C81-B86A-4146A042F9CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer3_2" ID="{DE0E165C-B7CA-444B-87FA-4F15C3C56327}" ShortID="177322704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer3_2" ID="{05089F97-1E86-455F-993C-DAE0CF2EC372}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer3_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="168782087"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer3_2" ID="{05089F97-1E86-455F-993C-DAE0CF2EC372}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_wallcollapse_Layer3_3" ID="{1F35944F-D850-4152-8070-3E632CD77B4A}" ShortID="751908342">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_wallcollapse_Layer3_3" ID="{CE42CF7E-1C26-4D56-9303-38A8DA9B4CBB}">
+													<Language>SFX</Language>
+													<AudioFile>Rock Walls\sx_level_wallcollapse_Layer3_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776756794"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_wallcollapse_Layer3_3" ID="{CE42CF7E-1C26-4D56-9303-38A8DA9B4CBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{953E607D-05FA-4FE0-87AC-8666BE13133A}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-1.42602495543674"/>
+										<Property Name="PanY" Type="Real64" Value="100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ObjectLists/>
 						</BlendContainer>
 					</ChildrenList>

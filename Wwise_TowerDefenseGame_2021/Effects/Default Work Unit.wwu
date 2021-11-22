@@ -62,6 +62,13 @@
 						</CustomStateList>
 					</StateInfo>
 				</Effect>
+				<Effect Name="PeakLimiter_RockWalls" ID="{E8DEA943-570E-41A0-B867-12A17FC04ADA}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="3"/>
+						<Property Name="Ratio" Type="Real32" Value="19.8"/>
+						<Property Name="Threshold" Type="Real32" Value="-25"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

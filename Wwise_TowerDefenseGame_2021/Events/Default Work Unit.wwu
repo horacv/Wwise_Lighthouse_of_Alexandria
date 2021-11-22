@@ -268,6 +268,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="ui_button_researchstart" ID="{EEB978D6-DBD9-447B-9095-BF099B646BA0}">
+							<ChildrenList>
+								<Action Name="" ID="{C84D2874-B13E-4A60-8359-42D45C67CA8D}" ShortID="178203568">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_ResearchStart" ID="{5895C139-85D2-47DE-99BA-B7B0D189B7DB}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_researchend" ID="{FBC87FA9-D5F1-4FF5-97B4-24357F6C22C9}">
+							<ChildrenList>
+								<Action Name="" ID="{462E906B-8481-4920-B16A-46A28D7EDD71}" ShortID="451031838">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_ResearchEnd" ID="{58B04AED-88FF-4D8A-8807-908F675DEFD7}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_nomoney" ID="{7E576184-B0E5-4C21-A8E5-E8F7BC3C605F}">
+							<ChildrenList>
+								<Action Name="" ID="{1461298C-7B4E-4A26-A68A-A28258FD2B38}" ShortID="870967614">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_NoMoney" ID="{20D94A1E-EB18-4ED1-B358-66610961B5E7}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Level" ID="{C4BCE6AE-E1C3-4FA2-9E9A-E2E1B6180A56}" ShortID="692076413">
@@ -293,6 +326,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="level_player_lifedecrease" ID="{45F886D5-2153-40DC-9D32-EA05D5888417}">
+							<ChildrenList>
+								<Action Name="" ID="{F0B9B68D-0D22-4004-88E0-47D382219C4C}" ShortID="8178769">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LifeDecrease" ID="{23D60B45-1934-4B7C-B87C-2090AC092C46}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="level_wallcollapse" ID="{076574D4-9BBD-4ED4-8592-A179D420A65C}">
+							<ChildrenList>
+								<Action Name="" ID="{16147FE1-4171-418E-8C09-51BCF698C1BC}" ShortID="381685000">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

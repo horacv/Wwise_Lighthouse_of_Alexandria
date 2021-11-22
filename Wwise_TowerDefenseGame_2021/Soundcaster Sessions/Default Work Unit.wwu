@@ -45,8 +45,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
 						<CurrentStateRef Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
 						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
+						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -129,6 +131,14 @@
 							<ObjectRef Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tower_Building" ID="{B239CB4F-D15C-4B3C-B289-39FA4DEA5326}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -145,8 +155,31 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{20393190-997A-451E-8F53-8BCF5F7FF3B8}"/>
+						<CurrentStateRef Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
+						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
+						<CurrentStateRef Name="None" ID="{C0251193-E33A-4D0F-A131-02E23B5CFB6D}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="UI" ID="{C9E3A2C3-9019-4A30-9A9A-239D76013217}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="volume_sfx" ID="{CB358814-8296-4A81-AF45-D00994051D70}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_music" ID="{31E3BD4D-FDE3-4ADB-B115-7D61DC8EE9EF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_master" ID="{71876EEA-1987-4C6D-9B8D-A0129E82E1E6}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
-						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
+						<CurrentStateRef Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
 						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
 						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
 					</CurrentStateList>

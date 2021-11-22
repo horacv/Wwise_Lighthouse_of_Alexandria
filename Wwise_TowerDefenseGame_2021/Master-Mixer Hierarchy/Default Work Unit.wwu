@@ -104,7 +104,7 @@
 										<DuckItem>
 											<BusRef Name="Music" ID="{A42E9F81-A40C-40D0-92DE-B8EB248C2F1B}"/>
 											<DuckingParam>
-												<Volume>-3</Volume>
+												<Volume>-4</Volume>
 												<FadeInTime>0.5</FadeInTime>
 												<FadeOutTime>0.100000001490116</FadeOutTime>
 												<FadeCurve>FadeExp1</FadeCurve>
