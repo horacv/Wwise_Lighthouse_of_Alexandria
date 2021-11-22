@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Ambiences" ID="{395460F7-50E0-4235-982E-C0183DA80CAE}" ShortID="324743976">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="25"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -17,9 +17,46 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="DayTIme" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" ShortID="123979281">
+						<BlendContainer Name="DayTime" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" ShortID="123979281">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{50B935E2-EC42-4BF0-92D5-C8516FD319DC}" ShortID="242049261">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="volume_sfx" ID="{CB358814-8296-4A81-AF45-D00994051D70}" WorkUnitID="{C20EC4FF-1023-4D34-BBD8-C5C7BA5F85BE}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{62622FD3-03B7-41B3-9A29-E327AD62DBBD}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -28,11 +65,19 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{57652ECC-98E8-47A5-8614-6A93B95804C3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<BlendContainer Name="Day" ID="{DAFA6696-2045-40F0-B056-737212667C28}" ShortID="280125274">
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="15"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -738,6 +783,11 @@
 								<BlendContainer Name="Night" ID="{DCDF0AC6-94F1-4893-B1F1-721720782E8A}" ShortID="800950816">
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1352,6 +1402,58 @@
 									<ObjectLists/>
 								</BlendContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="MakeUpGain"/>
+									<Property Name="Pitch"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="sfxmute" ID="{17360D23-7371-4453-8697-8E25EB1425CF}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="pausemenu" ID="{034836A3-EEB2-4854-B246-786933754573}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="on" ID="{1FC7732B-538E-4116-ACCD-36466FB84443}"/>
+										<CustomState Name="" ID="{81A3B8BF-7044-46DF-8E0E-B754B5D7F6C9}" ShortID="316155286">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
+										<CustomState Name="" ID="{7D77C4D5-7400-496C-B820-6BCCD77DF088}" ShortID="54322073">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
+										<CustomState Name="" ID="{03E0F066-AF07-4279-80F2-61299998AC88}" ShortID="1040371309">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause" ID="{BE608333-DC70-4CAD-9EE1-BBC0B4C93357}"/>
+										<CustomState Name="" ID="{422CA041-78C6-4E88-B6F5-79D8C480FB94}" ShortID="702368837">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</BlendContainer>
 					</ChildrenList>
@@ -3496,11 +3598,19 @@
 						<BlendContainer Name="Button_Hover" ID="{EDDA25E9-BC16-417C-BCC7-49B886CC99FC}" ShortID="264561290">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{E876F727-720E-4AA9-8CD2-49D332DAC91E}"/>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2.5</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -3712,6 +3822,13 @@
 							<ObjectLists/>
 						</BlendContainer>
 						<BlendContainer Name="Button_Click" ID="{AEF1B802-FC52-4447-A1A0-4EDFB49CDC59}" ShortID="609101902">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -3875,6 +3992,13 @@
 							<ObjectLists/>
 						</BlendContainer>
 						<BlendContainer Name="Button_UpgradeClick" ID="{A90EE3A0-3D4B-4F95-8AF6-F0A2DCCC1235}" ShortID="124475756">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -4417,10 +4541,12 @@
 					<ChildrenList>
 						<Sound Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" ShortID="716675804">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -4451,6 +4577,14 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{9AC9D7F1-4CDB-4C2D-BD87-E394E4BC860F}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="20.6773618538325"/>
+										<Property Name="PanY" Type="Real64" Value="100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sx_night_play_WarHorn" ID="{D9486235-9DA1-42BD-8992-5276395D75B0}" Platform="Linked"/>
@@ -4458,10 +4592,15 @@
 						</Sound>
 						<BlendContainer Name="Tower_Building" ID="{B239CB4F-D15C-4B3C-B289-39FA4DEA5326}" ShortID="1029091575">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

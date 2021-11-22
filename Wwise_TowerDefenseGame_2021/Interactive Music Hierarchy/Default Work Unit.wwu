@@ -20,6 +20,11 @@
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Night" ID="{4D55CEB8-C0C5-4A25-85D4-FEE0407563FB}" ShortID="78000064">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="125"/>
@@ -383,6 +388,11 @@
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Day" ID="{E255D840-B0BE-4833-9227-2AE0B0DE1663}" ShortID="673287326">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="85"/>
@@ -805,7 +815,7 @@
 																								<PointList>
 																									<Point>
 																										<XPos>86.47059</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
@@ -943,7 +953,7 @@
 									<PropertyList>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 									</PropertyList>
@@ -953,7 +963,7 @@
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="6"/>
 													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -998,6 +1008,11 @@
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="5"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

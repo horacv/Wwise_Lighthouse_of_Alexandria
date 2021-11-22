@@ -31,7 +31,7 @@
 						<Transition>
 							<StartState Name="night" ID="{636FACFB-5570-44A1-8A7D-49F3E0AFC2AE}"/>
 							<EndState Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
-							<Time>4</Time>
+							<Time>2</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -39,7 +39,7 @@
 				<StateGroup Name="pausemenu" ID="{034836A3-EEB2-4854-B246-786933754573}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.25"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -63,7 +63,7 @@
 				<StateGroup Name="sfxmute" ID="{17360D23-7371-4453-8697-8E25EB1425CF}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.3"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.7"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>

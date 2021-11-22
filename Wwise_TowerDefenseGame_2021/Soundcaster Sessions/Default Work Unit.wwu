@@ -50,15 +50,35 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
-				<SoundcasterSession Name="Music" ID="{58D35AC1-3CC3-41F3-A7D5-FC71986B6005}">
+				<SoundcasterSession Name="Music and Ambience" ID="{58D35AC1-3CC3-41F3-A7D5-FC71986B6005}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_gamestart" ID="{F539FA8B-D1C0-47A7-AC13-AF51B9A3EFFE}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<ObjectRef Name="Day" ID="{E255D840-B0BE-4833-9227-2AE0B0DE1663}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Night" ID="{4D55CEB8-C0C5-4A25-85D4-FEE0407563FB}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="DayTime" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Day" ID="{DAFA6696-2045-40F0-B056-737212667C28}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Night" ID="{DCDF0AC6-94F1-4893-B1F1-721720782E8A}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -78,7 +98,56 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
 						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
-						<CurrentStateRef Name="notime" ID="{31922188-D5F5-4F74-946D-2833C2AF7883}"/>
+						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
+						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="SFX and Music" ID="{8627D8A2-49B9-44E0-B7DD-B67B3609035C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Hover" ID="{EDDA25E9-BC16-417C-BCC7-49B886CC99FC}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Click" ID="{AEF1B802-FC52-4447-A1A0-4EDFB49CDC59}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_UpgradeClick" ID="{A90EE3A0-3D4B-4F95-8AF6-F0A2DCCC1235}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sx_night_play_WarHorn" ID="{35C60472-E9A6-493D-8EA7-8D338D1FAA39}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="volume_sfx" ID="{CB358814-8296-4A81-AF45-D00994051D70}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_music" ID="{31E3BD4D-FDE3-4ADB-B115-7D61DC8EE9EF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="volume_master" ID="{71876EEA-1987-4C6D-9B8D-A0129E82E1E6}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
+						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
+						<CurrentStateRef Name="day" ID="{4C39E7C3-7B06-4B2B-885D-5962B2B50E8B}"/>
 						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
