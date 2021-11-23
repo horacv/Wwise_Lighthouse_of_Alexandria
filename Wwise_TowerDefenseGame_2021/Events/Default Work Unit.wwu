@@ -169,17 +169,6 @@
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
-								<Action Name="" ID="{128ADF26-FBB0-4A0F-BA35-CA5A5F0E9481}" ShortID="1023193179">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{C518FFDA-98B8-4F95-953E-4E85E178445F}" ShortID="962277322">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -190,6 +179,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7091D99B-639C-4928-9EA0-924A2EC6435D}" ShortID="676979223">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DayTime" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{128ADF26-FBB0-4A0F-BA35-CA5A5F0E9481}" ShortID="1023193179">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -222,6 +233,41 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_music_credits" ID="{6F0AB025-5C26-44AB-B644-F5B272A92184}">
+							<ChildrenList>
+								<Action Name="" ID="{A5FFD9B6-ADEB-4227-8CEF-386A037F2E75}" ShortID="542409180">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BE0DB4E8-C0B5-431B-8B2B-1CC73176E6C5}" ShortID="622982202">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{37B47D2D-D81A-4968-89C6-012BDE1524A7}" ShortID="686187681">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Credits" ID="{1A234B20-9B33-44D5-AC9B-BBD512EDCC8C}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -273,7 +319,7 @@
 								<Action Name="" ID="{C84D2874-B13E-4A60-8359-42D45C67CA8D}" ShortID="178203568">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Button_ResearchStart" ID="{5895C139-85D2-47DE-99BA-B7B0D189B7DB}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+											<ObjectRef Name="sx_ui_click_researchstart" ID="{EECE26D7-8FFB-4C74-B823-8E627ADC4A70}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -284,7 +330,7 @@
 								<Action Name="" ID="{462E906B-8481-4920-B16A-46A28D7EDD71}" ShortID="451031838">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Button_ResearchEnd" ID="{58B04AED-88FF-4D8A-8807-908F675DEFD7}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+											<ObjectRef Name="sx_ui_click_researchend" ID="{E01AB539-CFBE-4D91-A4C9-BBB1F2CAACE5}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -348,6 +394,33 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="level_newriver_stop" ID="{A069FCC5-DABD-4B0B-B80B-428CF41F7D7E}">
+							<ChildrenList>
+								<Action Name="" ID="{5C22467A-34A5-4A64-8964-B66EE33759B7}" ShortID="175781931">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="New_River" ID="{93577970-9052-4272-A762-7186535C0E7F}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="level_newriver_play" ID="{0E24764E-12DF-4317-8E0F-1599AF69B35D}">
+							<ChildrenList>
+								<Action Name="" ID="{8CA1781E-59E0-436F-B492-D803391B3854}" ShortID="428346519">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="New_River" ID="{93577970-9052-4272-A762-7186535C0E7F}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

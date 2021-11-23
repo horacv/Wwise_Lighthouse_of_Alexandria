@@ -116,6 +116,14 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="level_newriver_play" ID="{0E24764E-12DF-4317-8E0F-1599AF69B35D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="level_newriver_stop" ID="{A069FCC5-DABD-4B0B-B80B-428CF41F7D7E}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Button_Hover" ID="{EDDA25E9-BC16-417C-BCC7-49B886CC99FC}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 							<Position X="1" Y="0"/>
 						</Module>

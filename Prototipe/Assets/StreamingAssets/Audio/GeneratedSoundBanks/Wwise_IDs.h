@@ -19,13 +19,21 @@ namespace AK
         static const AkUniqueID IMPACT_ARCHERTOWER = 3851137378U;
         static const AkUniqueID IMPACT_CANNONTOWER = 3210611180U;
         static const AkUniqueID IMPACT_CROSSBOWTOWER = 259899085U;
+        static const AkUniqueID LEVEL_NEWRIVER_PLAY = 1932380825U;
+        static const AkUniqueID LEVEL_NEWRIVER_STOP = 228478431U;
+        static const AkUniqueID LEVEL_PLAYER_LIFEDECREASE = 3135830688U;
         static const AkUniqueID LEVEL_TOWERBUILDING = 3525318799U;
+        static const AkUniqueID LEVEL_WALLCOLLAPSE = 3911213433U;
         static const AkUniqueID LEVEL_WARHORN = 3676066613U;
         static const AkUniqueID PLAY_GAMESTART = 1497459184U;
+        static const AkUniqueID PLAY_MUSIC_CREDITS = 4121310008U;
         static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
         static const AkUniqueID UI_BUTTON_BUTTONUPGRADE = 3915957147U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
         static const AkUniqueID UI_BUTTON_HOVER = 610582865U;
+        static const AkUniqueID UI_BUTTON_NOMONEY = 3548983204U;
+        static const AkUniqueID UI_BUTTON_RESEARCHEND = 1168892205U;
+        static const AkUniqueID UI_BUTTON_RESEARCHSTART = 2567008422U;
     } // namespace EVENTS
 
     namespace STATES
@@ -97,6 +105,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCES = 1017660616U;
+        static const AkUniqueID CREDITSMUSIC = 4107189454U;
         static const AkUniqueID DAYMUSIC = 3231935906U;
         static const AkUniqueID FX = 1802970371U;
         static const AkUniqueID LEVEL = 2782712965U;

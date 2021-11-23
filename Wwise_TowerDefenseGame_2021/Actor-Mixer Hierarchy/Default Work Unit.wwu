@@ -4522,60 +4522,27 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
-						<Sound Name="Button_ResearchStart" ID="{5895C139-85D2-47DE-99BA-B7B0D189B7DB}" ShortID="726630275">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sx_ui_click_researchstartlayer1_1" ID="{ECE10B78-BE90-43B0-BF25-39381F355B39}">
-									<Language>SFX</Language>
-									<AudioFile>sx_ui_click_researchstartlayer1_1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="278134384"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="sx_ui_click_researchstartlayer1_1" ID="{ECE10B78-BE90-43B0-BF25-39381F355B39}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Button_ResearchEnd" ID="{58B04AED-88FF-4D8A-8807-908F675DEFD7}" ShortID="755439095">
+						<Sound Name="Button_NoMoney" ID="{20D94A1E-EB18-4ED1-B358-66610961B5E7}" ShortID="63656350">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
+								<Property Name="MakeUpGain" Type="Real64">
 									<ValueList>
-										<Value>-120</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CFC084EC-5ABF-4D3A-9975-0CB9C851F1F5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="30"/>
+													<Property Name="Min" Type="Real64" Value="-30"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sx_ui_click_researchendlayer1_1" ID="{904B3857-D8A8-4E89-9A01-45B7AEBD302F}">
-									<Language>SFX</Language>
-									<AudioFile>sx_ui_click_researchendlayer1_1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="99388531"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="sx_ui_click_researchendlayer1_1" ID="{904B3857-D8A8-4E89-9A01-45B7AEBD302F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Button_NoMoney" ID="{20D94A1E-EB18-4ED1-B358-66610961B5E7}" ShortID="63656350">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -4596,6 +4563,82 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sx_ui_click_nomoney" ID="{C71B0C24-BA72-46CC-AB2B-9A3B786C600F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sx_ui_click_researchend" ID="{E01AB539-CFBE-4D91-A4C9-BBB1F2CAACE5}" ShortID="496691704">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{55634E28-29B6-4EDD-B17C-4B0876EB0489}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+													<Property Name="Min" Type="Real64" Value="-15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_ui_click_researchend" ID="{7654E72F-FBC6-4B97-A34B-C083D3E1D01D}">
+									<Language>SFX</Language>
+									<AudioFile>sx_ui_click_researchend.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="304905258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_ui_click_researchend" ID="{7654E72F-FBC6-4B97-A34B-C083D3E1D01D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sx_ui_click_researchstart" ID="{EECE26D7-8FFB-4C74-B823-8E627ADC4A70}" ShortID="720430139">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EF5A8310-DFB7-4F00-BBE8-CB21B32BEC62}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+													<Property Name="Min" Type="Real64" Value="-25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_ui_click_researchstart" ID="{C317E0C3-11DE-4C90-BD2B-75F459596A4D}">
+									<Language>SFX</Language>
+									<AudioFile>sx_ui_click_researchstart.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="640411526"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_ui_click_researchstart" ID="{C317E0C3-11DE-4C90-BD2B-75F459596A4D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -5122,8 +5165,8 @@
 													<Modifier Name="" ID="{B95CBCB8-A3CE-46C0-9958-C64B80B64E64}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -5473,6 +5516,215 @@
 									</PropertyList>
 								</Panner>
 							</PositioningInfo>
+							<ObjectLists/>
+						</BlendContainer>
+						<BlendContainer Name="New_River" ID="{93577970-9052-4272-A762-7186535C0E7F}" ShortID="63426226">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sx_level_newriver_Layer2" ID="{7C31AAAC-E845-4B52-B3B8-83D6AD2585FA}" ShortID="575306998">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_level_newriver_Layer2" ID="{281DEC12-CF4B-4F75-882D-B509AF68B513}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="210.526"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.776811594202899"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.811594202898551"/>
+												<Property Name="LoopEnd" Type="Real64" Value="6.72463768115942"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>New River\sx_level_newriver_Layer2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="237135070"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_level_newriver_Layer2" ID="{281DEC12-CF4B-4F75-882D-B509AF68B513}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sx_level_newriver_Layer3" ID="{BB51EA72-5BBA-4DAA-9C19-8322A85D9856}" ShortID="863678744">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_level_newriver_Layer3" ID="{7E639246-056D-4644-96DE-753A2CB2182A}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="421.053"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.104347826086957"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.405797101449275"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.915942028985507"/>
+												<Property Name="LoopEnd" Type="Real64" Value="6.94492753623188"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>New River\sx_level_newriver_Layer3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="425297842"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_level_newriver_Layer3" ID="{7E639246-056D-4644-96DE-753A2CB2182A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Layer1" ID="{94D074E0-86DF-434A-B5DC-C8654A117D3A}" ShortID="802405686">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{52B27AC3-CFCC-4320-8DC7-E1794A62D767}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sx_level_newriver_Layer1_1" ID="{2F2B4737-90C9-436F-A5A6-6305272B89A7}" ShortID="657976911">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_newriver_Layer1_1" ID="{C9AC32BF-5917-4767-AAEF-EBE842F9CFEA}">
+													<Language>SFX</Language>
+													<AudioFile>New River\sx_level_newriver_Layer1_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="88085030"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_newriver_Layer1_1" ID="{C9AC32BF-5917-4767-AAEF-EBE842F9CFEA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_newriver_Layer1_2" ID="{0B79A46B-630A-480F-A01D-E8FF4417EB91}" ShortID="603705169">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_newriver_Layer1_2" ID="{EACFF332-C49E-4110-8C0B-72AE940D4F8F}">
+													<Language>SFX</Language>
+													<AudioFile>New River\sx_level_newriver_Layer1_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="345373589"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_newriver_Layer1_2" ID="{EACFF332-C49E-4110-8C0B-72AE940D4F8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_newriver_Layer1_3" ID="{E2994567-4015-49D4-BF2A-382DA094E6EC}" ShortID="173949709">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_newriver_Layer1_3" ID="{EDD8293D-D180-4184-A41C-84A0A4F70F0B}">
+													<Language>SFX</Language>
+													<AudioFile>New River\sx_level_newriver_Layer1_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22917141"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_newriver_Layer1_3" ID="{EDD8293D-D180-4184-A41C-84A0A4F70F0B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sx_level_newriver_Layer1_4" ID="{7B743983-22B9-475C-AF16-DFBA30260603}" ShortID="738835257">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sx_level_newriver_Layer1_4" ID="{3D08D7AC-6573-4035-B82A-C3D7AC8450C4}">
+													<Language>SFX</Language>
+													<AudioFile>New River\sx_level_newriver_Layer1_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="446653490"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sx_level_newriver_Layer1_4" ID="{3D08D7AC-6573-4035-B82A-C3D7AC8450C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
 					</ChildrenList>

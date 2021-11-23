@@ -163,6 +163,9 @@
 								<Bus Name="ThemeMusic" ID="{8BF22FA0-83DD-46E4-BE53-4ADA9C8DCC43}">
 									<ObjectLists/>
 								</Bus>
+								<Bus Name="CreditsMusic" ID="{33E5108B-CB3D-4B5F-BA7A-8DE9F4D718BB}">
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
