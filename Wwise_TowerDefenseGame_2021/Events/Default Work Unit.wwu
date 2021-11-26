@@ -129,6 +129,30 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{481F33A0-CA32-46D5-B3CF-42B3B1E95150}" ShortID="664466556">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F42089AA-7957-4A2C-81A9-DFFF9AF0D757}" ShortID="304113673">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Defeat" ID="{B8A6395C-1E85-4239-A56C-7222AB3E3151}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{1DF4BF10-07BE-4C77-9ABE-668B1E0ECB6D}" ShortID="154227904">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -192,6 +216,18 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AE2DF5E9-C59E-4CDB-8E8C-87D238F060F2}" ShortID="266099235">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Defeat" ID="{B8A6395C-1E85-4239-A56C-7222AB3E3151}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -333,6 +369,45 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_music_defeat" ID="{8585C300-D1D3-492B-90DD-05BAA87C5AE6}">
+							<ChildrenList>
+								<Action Name="" ID="{218EB08F-8A51-4FE9-8448-01E1E9312DD4}" ShortID="281933028">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8451400C-AB1C-4CBB-888A-C6540C028A4E}" ShortID="510392288">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DayTime" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B95FC1F5-FF92-48F5-BD12-7DC66B561A06}" ShortID="851131151">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Defeat" ID="{B8A6395C-1E85-4239-A56C-7222AB3E3151}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID LEVEL_WARHORN = 3676066613U;
         static const AkUniqueID PLAY_GAMESTART = 1497459184U;
         static const AkUniqueID PLAY_MUSIC_CREDITS = 4121310008U;
+        static const AkUniqueID PLAY_MUSIC_DEFEAT = 1937060319U;
         static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
         static const AkUniqueID PLAY_MUSIC_VICTORY = 3220824256U;
         static const AkUniqueID UI_BUTTON_BUTTONUPGRADE = 3915957147U;

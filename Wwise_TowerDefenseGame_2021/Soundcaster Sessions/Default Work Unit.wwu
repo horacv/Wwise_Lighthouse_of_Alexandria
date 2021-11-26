@@ -99,12 +99,16 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_music_victory" ID="{5DDF63D4-7377-486B-AA96-4C075A36F617}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<ObjectRef Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<ObjectRef Name="play_music_victory" ID="{5DDF63D4-7377-486B-AA96-4C075A36F617}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_music_defeat" ID="{8585C300-D1D3-492B-90DD-05BAA87C5AE6}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Button_Hover" ID="{EDDA25E9-BC16-417C-BCC7-49B886CC99FC}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
@@ -131,7 +135,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
-						<CurrentStateRef Name="None" ID="{E764EEEC-8113-4E8A-AF59-989DA84E0731}"/>
+						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
 						<CurrentStateRef Name="night" ID="{636FACFB-5570-44A1-8A7D-49F3E0AFC2AE}"/>
 						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
 					</CurrentStateList>
