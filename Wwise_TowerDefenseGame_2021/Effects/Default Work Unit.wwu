@@ -69,6 +69,12 @@
 						<Property Name="Threshold" Type="Real32" Value="-25"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="MasterGain" ID="{72B2C019-B1A3-462F-B7A1-009332C50342}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="6.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="MusicDucking" ID="{CB0FB1CF-81FC-4D36-984B-10857408925D}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

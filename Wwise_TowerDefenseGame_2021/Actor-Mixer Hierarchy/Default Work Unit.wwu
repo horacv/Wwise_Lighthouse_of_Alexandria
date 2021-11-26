@@ -10,7 +10,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+							<ObjectRef Name="Music &amp; Amb CS" ID="{13B72E25-0B4E-4192-96D5-2877BB82F7FE}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambiences" ID="{1255C2E5-789D-49C7-BCB5-68686EC950B9}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
@@ -785,7 +785,7 @@
 										<Property Name="Color" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1466,7 +1466,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+							<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
@@ -1474,6 +1474,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Archers" ID="{40418AD0-D3F8-4749-9114-35E2BA442607}" ShortID="106827734">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -2199,6 +2206,13 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Crossbow" ID="{095A97E6-05DB-4C33-A4E4-0ABFBF64064A}" ShortID="249527005">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -3036,6 +3050,13 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Cannon" ID="{72645FD4-82DC-4DDF-9B5F-28E351FC310F}" ShortID="18621881">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
@@ -3588,7 +3609,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+							<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="UI" ID="{C8DBADF2-1F0B-4340-8E08-04034DCDC1FC}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
@@ -4651,7 +4672,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+							<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Level" ID="{82F95FC8-8DE2-444B-9A28-1E3AA9AAB1C4}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
@@ -5234,6 +5255,11 @@
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-11</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
