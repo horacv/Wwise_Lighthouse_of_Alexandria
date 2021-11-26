@@ -1392,7 +1392,7 @@
 										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 									</PropertyList>
 									<TransitionInfo>
-										<TransitionObjectRef Name="Transto_Credits" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										<TransitionObjectRef Name="Cymbal_Uplift" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{45B8E181-C076-4623-851E-4EB7D88BB01B}">
 												<PropertyList>
@@ -1424,7 +1424,7 @@
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{0EA7F711-6C17-4C8C-87D7-30F565AE7966}">
-										<SegmentRef Name="Transto_Credits" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										<SegmentRef Name="Cymbal_Uplift" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 									</MusicStinger>
 								</Local>
 							</Reference>
@@ -1452,7 +1452,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<MusicSegment Name="Transto_Credits" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" ShortID="195425482">
+						<MusicSegment Name="Cymbal_Uplift" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" ShortID="195425482">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="5428.86655250617"/>
 								<Property Name="MakeUpGain" Type="Real64">
@@ -1580,6 +1580,216 @@
 						</MusicSegment>
 					</ChildrenList>
 				</Folder>
+				<MusicPlaylistContainer Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" ShortID="792937690">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Tempo" Type="Real64" Value="128"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Victory_128bpm" ID="{F0592103-203E-49CA-91E2-503A313AF927}" ShortID="197045591">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="71542.0386904762"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Tower Defence - sin intro_Victory_Cm_128" ID="{D99776C6-E901-4D0C-B6F9-3A9AF9451921}" ShortID="1067890773">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tower Defence - sin intro_Victory_Cm_128" ID="{30FB5E57-1A17-44F1-9E56-DA2A3FE6C940}">
+											<Language>SFX</Language>
+											<AudioFile>Tower Defence - sin intro_Victory_Cm_128.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="700967323"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{66C93161-12D2-4E67-B443-14B8998C701B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{27E27D80-31AD-4E24-941E-647F5B9A303F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Tower Defence - sin intro_Victory_Cm_128" ID="{13BBDB7E-49F7-4F32-AD21-88E83757E457}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="1371.22791432662"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="66458.0260488317"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="812.052589230705"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-1371.22791432662"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Tower Defence - sin intro_Victory_Cm_128" ID="{30FB5E57-1A17-44F1-9E56-DA2A3FE6C940}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{D783C3C5-9E99-4F9F-9B44-FA331EC8E27A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>1.37123</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>66.45803</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{A8D35A9B-6B5D-4741-8BEE-02FADA19F77C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>1.37123</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>66.45803</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{BB845BC9-05BE-42B5-AE42-3D9B1387CF1A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>1.37123</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>66.45803</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{982FB29D-A0C9-4865-BC4D-CC2A8A1C9C52}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="468.75"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{B59C7469-D027-43BE-A44F-DC5CE332F167}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="64218.75"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{6FCC583F-14B3-4BF5-BEE3-BA4344ADA167}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{81A7E8EB-8B6A-41A1-A1C1-F5188DAE8C07}">
+									<PropertyList>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Cymbal_Uplift" ID="{24894B68-CCCF-48EF-ACF2-F7A8CF585796}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+									</TransitionInfo>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{3E493C8F-3361-45B6-BF8F-77753CBAE10E}" ShortID="596072053">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{FAB1D157-EDB9-4DFB-967E-501C45EC8B44}" ShortID="199177329">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Victory_128bpm" ID="{F0592103-203E-49CA-91E2-503A313AF927}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

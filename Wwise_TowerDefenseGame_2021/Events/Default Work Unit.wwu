@@ -161,13 +161,17 @@
 						</Event>
 						<Event Name="play_music_menu" ID="{A97A41FF-C8CD-4FE8-8B8E-9FA9AB7D248D}">
 							<ChildrenList>
-								<Action Name="" ID="{368E7004-90BA-4D02-9C7E-48DCF82CA860}" ShortID="981604436">
+								<Action Name="" ID="{414C075A-124E-4A4E-8DC9-2565C29CD247}" ShortID="164655973">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="3"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{C518FFDA-98B8-4F95-953E-4E85E178445F}" ShortID="962277322">
 									<PropertyList>
@@ -268,6 +272,45 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Credits" ID="{1A234B20-9B33-44D5-AC9B-BBD512EDCC8C}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_music_victory" ID="{5DDF63D4-7377-486B-AA96-4C075A36F617}">
+							<ChildrenList>
+								<Action Name="" ID="{211AEC38-BD32-4819-8CAE-ACCA2EBB94DF}" ShortID="163703043">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Gameplay" ID="{D86F82DA-A757-4CE8-B90D-4534D4A89707}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A795A2D1-A5AB-40E8-A88B-EA7091EF08FC}" ShortID="988676040">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DayTime" ID="{C7EEC013-D018-4A62-A2D6-3A9315E9DD90}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5D78A0AA-907C-4CC9-B062-7080BB2C6FC0}" ShortID="321999636">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Victory" ID="{1E1F64B2-B1BB-4079-AD85-5878A4A61A85}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
