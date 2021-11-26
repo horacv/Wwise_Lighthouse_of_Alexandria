@@ -14,8 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ATTACK_ARCHERTOWER = 354991228U;
+        static const AkUniqueID ATTACK_ARCHERTOWER_FIRE = 4294498359U;
         static const AkUniqueID ATTACK_CANNONTOWER = 1825859782U;
         static const AkUniqueID ATTACK_CROSSBOWTOWER = 781691411U;
+        static const AkUniqueID ATTACK_CROSSBOWTOWER_FIRE = 1352094898U;
         static const AkUniqueID IMPACT_ARCHERTOWER = 3851137378U;
         static const AkUniqueID IMPACT_CANNONTOWER = 3210611180U;
         static const AkUniqueID IMPACT_CROSSBOWTOWER = 259899085U;
@@ -28,7 +30,9 @@ namespace AK
         static const AkUniqueID PLAY_GAMESTART = 1497459184U;
         static const AkUniqueID PLAY_MUSIC_CREDITS = 4121310008U;
         static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
+        static const AkUniqueID PLAY_MUSIC_VICTORY = 3220824256U;
         static const AkUniqueID UI_BUTTON_BUTTONUPGRADE = 3915957147U;
+        static const AkUniqueID UI_BUTTON_BUTTONUPGRADE_FIRE = 1636509706U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
         static const AkUniqueID UI_BUTTON_HOVER = 610582865U;
         static const AkUniqueID UI_BUTTON_NOMONEY = 3548983204U;

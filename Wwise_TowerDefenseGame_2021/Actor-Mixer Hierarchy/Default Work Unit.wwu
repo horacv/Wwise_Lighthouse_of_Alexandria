@@ -1462,7 +1462,17 @@
 				<ActorMixer Name="Towers" ID="{65D358A5-62AD-4E56-8051-DD7BD1A4D0B9}" ShortID="25045071">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2194,6 +2204,427 @@
 													<ObjectLists/>
 													<ActiveSourceList>
 														<ActiveSource Name="sx_int_impact_arrow_Layer4_3" ID="{701D6D01-B438-44ED-AEA4-73AF677C9C32}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Attack_FireArcher" ID="{54F30617-5AB6-4C53-BC67-967BF6E40841}" ShortID="983636947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Layer 1" ID="{F71A8525-9EEF-4FFD-A7E8-DA9E047CA23C}" ShortID="425867619">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{296E4992-364D-4512-B4D1-5D6FEB4E3432}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_arrowAttack_Layer1_3" ID="{39B23B83-8732-46E1-8D2E-FBC2C998ADAF}" ShortID="194595887">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer1_3" ID="{73767E6C-06F7-46F7-A563-D36D98CD345B}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer1_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="182805467"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer1_3" ID="{73767E6C-06F7-46F7-A563-D36D98CD345B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer1_1" ID="{2021009A-7E29-4F7B-AA55-AEED201DAD6D}" ShortID="852005029">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer1_1" ID="{B26742EE-7600-4553-8EBC-2429C1B6B427}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer1_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="645384186"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer1_1" ID="{B26742EE-7600-4553-8EBC-2429C1B6B427}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer1_2" ID="{AC61629E-5957-4B66-BCC8-D4C1A92C6BEF}" ShortID="812572446">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer1_2" ID="{DC4689B5-2721-49C8-A195-888F5679F905}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer1_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="86581746"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer1_2" ID="{DC4689B5-2721-49C8-A195-888F5679F905}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer 2" ID="{ED1850EA-843C-4246-AD43-11883902A782}" ShortID="205978406">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{43652538-C249-462F-8EAA-A27A39B3ED29}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_arrowAttack_Layer2_1" ID="{5B3E473C-18E4-43D5-9689-FFBA797B95DE}" ShortID="676093166">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer2_1" ID="{79E302E3-BC53-4270-8735-CA5C03DA3970}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer2_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="175793701"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer2_1" ID="{79E302E3-BC53-4270-8735-CA5C03DA3970}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer2_2" ID="{D7C1E379-12F7-48CE-BFF9-630B84D6D4E8}" ShortID="594277191">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer2_2" ID="{8A422CA9-7C7E-441D-80A4-5C1795293EC9}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer2_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="794478279"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer2_2" ID="{8A422CA9-7C7E-441D-80A4-5C1795293EC9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer2_3" ID="{C41E46E5-01EF-4F4B-83D8-A2693DD88EDB}" ShortID="1055122562">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer2_3" ID="{14E7F59E-3D1E-471B-87C9-32DB6F8CE907}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer2_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1007077134"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer2_3" ID="{14E7F59E-3D1E-471B-87C9-32DB6F8CE907}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer 3" ID="{3C487E99-2DCC-40B0-A913-A9EBEA2569CF}" ShortID="597381439">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{21A10F1C-0195-41D3-8290-70A5E6186935}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_arrowAttack_Layer3_1" ID="{AFB32AA6-3C77-4B33-B728-C015403BFE6E}" ShortID="255492596">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer3_1" ID="{35D1881C-0EC5-4342-8C3F-FAF570FA3BBB}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer3_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="999775811"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer3_1" ID="{35D1881C-0EC5-4342-8C3F-FAF570FA3BBB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer3_2" ID="{7A42A002-2F64-439A-BB69-49C138389388}" ShortID="213848088">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer3_2" ID="{E8CAD124-42E8-4302-9DEE-0FB67862AAAC}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer3_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="161270030"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer3_2" ID="{E8CAD124-42E8-4302-9DEE-0FB67862AAAC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_arrowAttack_Layer3_3" ID="{97F3AB2B-7D54-4E35-A594-4FDA17A53848}" ShortID="844439473">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_arrowAttack_Layer3_3" ID="{AB230614-60D5-4AD0-AF13-EC11B266FD4F}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_arrowAttack_Layer3_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1011509902"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_arrowAttack_Layer3_3" ID="{AB230614-60D5-4AD0-AF13-EC11B266FD4F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer Extra" ID="{95BD054E-F906-4EC3-ADE3-59D4CEAB3B80}" ShortID="857489097">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{999DF21A-537E-4FE3-BE60-7D5ADE09BBF6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{7EA182CE-5AAC-4A86-B3BA-AD8E6211201F}" ShortID="127136324">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{2DAC9E95-1573-4E01-9CE4-63DBEAD598B5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0832116788321168"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.221897810218978"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="756568001"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{2DAC9E95-1573-4E01-9CE4-63DBEAD598B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{60FF925F-5117-48D7-BCEB-BDD5F94EF56D}" ShortID="278474355">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{C04822EC-50C7-42EE-B70A-C3E5F538D20C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.070948905109489"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.178686131386861"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="162272621"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{C04822EC-50C7-42EE-B70A-C3E5F538D20C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{C56C32CC-B70F-4472-BF8A-AE3546759F2D}" ShortID="1040459946">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{FFECDE14-3B54-4B99-A7D1-C58BEF08ABFC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0998540145985401"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.158102189781022"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="601070372"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{FFECDE14-3B54-4B99-A7D1-C58BEF08ABFC}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3038,6 +3469,532 @@
 													<ObjectLists/>
 													<ActiveSourceList>
 														<ActiveSource Name="sx_int_impact_crossbow_Layer4_3" ID="{A8B2BE6E-D36C-4F1B-B5BE-73E939CFFF35}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Attack_FireCrossbow" ID="{D462CBD8-BE23-48AA-8F05-2FC7DC54732A}" ShortID="203711332">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Layer 1" ID="{99682269-F29C-4B1D-A188-E980FD94D987}" ShortID="75360436">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8A75ED29-D5E6-4F26-8638-BA3D5467C56D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer1_1" ID="{E194EB3D-CF37-489F-8C0E-F8AC1041EFC7}" ShortID="45321885">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer1_1" ID="{D21B20F3-2D6E-4FAB-AB9A-E9F02FC72F6F}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer1_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="723008495"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer1_1" ID="{D21B20F3-2D6E-4FAB-AB9A-E9F02FC72F6F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer1_2" ID="{0BF4E3DD-D386-4413-8576-8DAD01C3AD0C}" ShortID="1056756454">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer1_2" ID="{2B962210-1495-45C2-B21E-3CE2D19A3971}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer1_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="71418589"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer1_2" ID="{2B962210-1495-45C2-B21E-3CE2D19A3971}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer1_3" ID="{AE973B73-8C51-4489-A0F3-7BF651735020}" ShortID="964227081">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer1_3" ID="{BAD79815-E8E3-4170-833A-E16FB540A34F}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer1_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="879332919"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer1_3" ID="{BAD79815-E8E3-4170-833A-E16FB540A34F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer 2" ID="{A34A58DB-D21A-48E8-AE4D-4B60936DE735}" ShortID="504880272">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C6501C04-1362-4AE1-A420-A81DF12BD645}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer2_1" ID="{DDDB6541-067F-4820-BB1B-CC1BE36A9955}" ShortID="111573087">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer2_1" ID="{0F02823B-A0D0-49F8-95BA-F7C1B7B3A817}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer2_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="749147611"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer2_1" ID="{0F02823B-A0D0-49F8-95BA-F7C1B7B3A817}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer2_2" ID="{C98E07BF-A44B-4B24-B347-D0CB797ABA8E}" ShortID="854726963">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer2_2" ID="{AE8FE8EE-FB09-426E-A422-94F4241B1679}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer2_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="74264752"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer2_2" ID="{AE8FE8EE-FB09-426E-A422-94F4241B1679}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer2_3" ID="{C61DC2B3-4175-4B7D-934F-45860E1FEC56}" ShortID="865032903">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer2_3" ID="{C6E95F32-FE82-48B0-ACAA-B7381594A2D7}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer2_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="322624274"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer2_3" ID="{C6E95F32-FE82-48B0-ACAA-B7381594A2D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer 3" ID="{6150B48C-40F2-48F2-8085-7744567F965C}" ShortID="319768110">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{49730582-1F1E-4203-B563-C1E537CEA252}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer3_1" ID="{0B7C1E15-4973-473C-BABD-D113DA9EDD75}" ShortID="829110652">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer3_1" ID="{3D33BB07-BE3A-4A49-AB9C-8C691A935968}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer3_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="217740911"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer3_1" ID="{3D33BB07-BE3A-4A49-AB9C-8C691A935968}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer3_2" ID="{7AEED298-7878-42F6-A38C-FD897E3214DB}" ShortID="861895521">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer3_2" ID="{F1516D25-02FF-425E-8927-7E7C63419507}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer3_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="919539601"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer3_2" ID="{F1516D25-02FF-425E-8927-7E7C63419507}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer3_3" ID="{58DF0ACD-9D61-498A-8427-2362B18A682F}" ShortID="57005778">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer3_3" ID="{F07702E5-B08B-4233-8280-CEE5C33C3B63}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer3_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="970763471"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer3_3" ID="{F07702E5-B08B-4233-8280-CEE5C33C3B63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer 4" ID="{134971A6-2E30-4B5A-80CC-6F098CD35ACF}" ShortID="224804577">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{09FE573B-EBED-425E-B9C8-256E42C77001}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer4_1" ID="{937FC47A-DA0D-4221-BE2E-B8D747BC1124}" ShortID="441988732">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer4_1" ID="{2E993155-FD71-4A6D-BB34-B6103CFFC793}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer4_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="26805638"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer4_1" ID="{2E993155-FD71-4A6D-BB34-B6103CFFC793}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer4_2" ID="{298655B4-360B-420E-BD85-34B66B9F51DA}" ShortID="842760495">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer4_2" ID="{A3916489-582F-4962-BEBD-B91E73FB92EB}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer4_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="618587153"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer4_2" ID="{A3916489-582F-4962-BEBD-B91E73FB92EB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_crossbowAttack_Layer4_3" ID="{B66733E1-19F4-40E3-8A5F-BA466157EA22}" ShortID="881049145">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="FX" ID="{50082DDF-17DD-4FCB-9E01-B508716BEF9E}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_crossbowAttack_Layer4_3" ID="{F3C2E8EF-102D-4465-B464-E68DE1FC215D}">
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_crossbowAttack_Layer4_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="31583875"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_crossbowAttack_Layer4_3" ID="{F3C2E8EF-102D-4465-B464-E68DE1FC215D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Layer Extra" ID="{1CE3C9FA-342C-4CED-8895-3618CA16781D}" ShortID="1052204044">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{84F7A191-5C61-409E-8199-B1EC4771DF72}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{715E18B0-4283-45BE-99EC-A0744BDF1A5A}" ShortID="509014732">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{3F3CD6A7-A599-4F41-B564-B26EC5A9B42A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0832116788321168"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.221897810218978"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="756568001"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra1" ID="{3F3CD6A7-A599-4F41-B564-B26EC5A9B42A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{AA14DD25-3DD3-427D-9A50-E86BEA4C0E13}" ShortID="1073171911">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{38B7C815-A5F0-43E9-9956-59190876D35D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.070948905109489"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.178686131386861"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="162272621"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra2" ID="{38B7C815-A5F0-43E9-9956-59190876D35D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{272040A6-EBC3-4CF6-933B-FC77206816DB}" ShortID="687973839">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="FX CS" ID="{3A081149-5B24-4BCA-9FA1-1B7B70B2AFB0}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Towers" ID="{B2886719-8A0C-4F16-9549-05E20A8075CA}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{3998ED43-4040-43F0-9850-3E3133066D8D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0998540145985401"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.158102189781022"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sx_int_tower_FireUpgrade_LayerExtra3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="601070372"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sx_int_tower_FireUpgrade_LayerExtra3" ID="{3998ED43-4040-43F0-9850-3E3133066D8D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -4662,6 +5619,131 @@
 								<ActiveSource Name="sx_ui_click_researchstart" ID="{C317E0C3-11DE-4C90-BD2B-75F459596A4D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="Button_UpgradeFire" ID="{5A166079-857F-4076-B794-301C56F34DAE}" ShortID="26708748">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2A324115-DCDF-4AE0-AF86-9D66B0ECCF95}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+													<Property Name="Min" Type="Real64" Value="-15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sx_ui_click_fire_Layer1" ID="{FF29D283-C723-4DF4-850B-03B1DA23CEBB}" ShortID="628862236">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_ui_click_fire_Layer1" ID="{0EE275DE-CD35-44AC-952A-14960A8FB0DE}">
+											<Language>SFX</Language>
+											<AudioFile>sx_ui_click_fire_Layer1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="479061085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_ui_click_fire_Layer1" ID="{0EE275DE-CD35-44AC-952A-14960A8FB0DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sx_ui_click_fire_Layer2" ID="{5A8974BF-53A1-4839-9E37-478AC19E3931}" ShortID="482838592">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_ui_click_fire_Layer2" ID="{E6579414-8E0F-45D0-A6B4-B520A7B78511}">
+											<Language>SFX</Language>
+											<AudioFile>sx_ui_click_fire_Layer2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="790667957"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_ui_click_fire_Layer2" ID="{E6579414-8E0F-45D0-A6B4-B520A7B78511}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sx_ui_click_fire_Layer3" ID="{C3BE0664-AF9A-4737-B8C0-234449EF7687}" ShortID="347717176">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_ui_click_fire_Layer3" ID="{CF0BCA66-0D3C-4DC2-8B94-1626B59D7B89}">
+											<Language>SFX</Language>
+											<AudioFile>sx_ui_click_fire_Layer3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="601506578"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_ui_click_fire_Layer3" ID="{CF0BCA66-0D3C-4DC2-8B94-1626B59D7B89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sx_ui_click_fire_Layer4" ID="{EB82DB50-D1D8-45DF-AD0A-0DA89AE42C3C}" ShortID="335467306">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39DE345C-AB9D-4424-9993-9296AFF898BE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6D22668E-7B6D-485B-8425-DD2C1455D30A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sx_ui_click_fire_Layer4" ID="{EE4E9C86-5946-465F-8799-2F751007025E}">
+											<Language>SFX</Language>
+											<AudioFile>sx_ui_click_fire_Layer4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="986256033"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sx_ui_click_fire_Layer4" ID="{EE4E9C86-5946-465F-8799-2F751007025E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -4737,7 +5819,17 @@
 										<Value>-2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>2</Value>

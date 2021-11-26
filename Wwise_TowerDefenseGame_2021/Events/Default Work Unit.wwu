@@ -75,6 +75,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="attack_archertower_fire" ID="{51C0AD6D-97CD-4887-BD7B-74799EB7349B}">
+							<ChildrenList>
+								<Action Name="" ID="{95B6CE9D-0B51-4111-A298-DE4BADCE5805}" ShortID="318932634">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Attack_FireArcher" ID="{54F30617-5AB6-4C53-BC67-967BF6E40841}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="attack_crossbowtower_fire" ID="{E7BC6DDB-4532-43BC-AFB4-DA2B225729E5}">
+							<ChildrenList>
+								<Action Name="" ID="{6F94121E-25D8-4FA6-B442-0FD9E0C35C1E}" ShortID="397645495">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Attack_FireCrossbow" ID="{D462CBD8-BE23-48AA-8F05-2FC7DC54732A}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Global_Game_Events" ID="{FFC3A8E7-9DE4-4F7B-92AC-C7DB5982F32D}" ShortID="362255995">
@@ -385,6 +407,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Button_NoMoney" ID="{20D94A1E-EB18-4ED1-B358-66610961B5E7}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_buttonupgrade_fire" ID="{850A6925-7CDE-46F7-BE41-2E5228C48711}">
+							<ChildrenList>
+								<Action Name="" ID="{60C55B0B-96E7-4769-AA61-2BEA4A358968}" ShortID="166271531">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_UpgradeFire" ID="{5A166079-857F-4076-B794-301C56F34DAE}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
