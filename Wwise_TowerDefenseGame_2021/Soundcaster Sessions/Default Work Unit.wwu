@@ -179,10 +179,6 @@
 							<ObjectRef Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 							<Position X="3" Y="1"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Tower_Building" ID="{B239CB4F-D15C-4B3C-B289-39FA4DEA5326}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
-							<Position X="4" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
