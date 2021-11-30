@@ -255,6 +255,19 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{A5C6D270-F224-4EA5-875E-5D98B46D7D12}" ShortID="895587597">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Credits" ID="{1A234B20-9B33-44D5-AC9B-BBD512EDCC8C}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{128ADF26-FBB0-4A0F-BA35-CA5A5F0E9481}" ShortID="1023193179">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -305,7 +318,8 @@
 								<Action Name="" ID="{A5FFD9B6-ADEB-4227-8CEF-386A037F2E75}" ShortID="542409180">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -317,7 +331,8 @@
 								<Action Name="" ID="{BE0DB4E8-C0B5-431B-8B2B-1CC73176E6C5}" ShortID="622982202">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
