@@ -134,10 +134,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="off" ID="{343D3832-8FCA-4168-A815-7BA82723E592}"/>
+						<CurrentStateRef Name="None" ID="{20393190-997A-451E-8F53-8BCF5F7FF3B8}"/>
 						<CurrentStateRef Name="nopause" ID="{2559BEEB-CDB7-4882-87F8-B724C231DC1D}"/>
-						<CurrentStateRef Name="night" ID="{636FACFB-5570-44A1-8A7D-49F3E0AFC2AE}"/>
-						<CurrentStateRef Name="off" ID="{49664B4A-00BE-4F16-9A93-18BA7254DD7D}"/>
+						<CurrentStateRef Name="notime" ID="{31922188-D5F5-4F74-946D-2833C2AF7883}"/>
+						<CurrentStateRef Name="None" ID="{C0251193-E33A-4D0F-A131-02E23B5CFB6D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -150,14 +150,6 @@
 						<Module>
 							<ObjectRef Name="Music_ThemeMenu" ID="{89D4BB8A-7782-4C8C-A5CF-887BC9E18023}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
 							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="level_newriver_play" ID="{0E24764E-12DF-4317-8E0F-1599AF69B35D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="level_newriver_stop" ID="{A069FCC5-DABD-4B0B-B80B-428CF41F7D7E}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
-							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Button_Hover" ID="{EDDA25E9-BC16-417C-BCC7-49B886CC99FC}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
@@ -178,6 +170,14 @@
 						<Module>
 							<ObjectRef Name="RockWalls_Collapse" ID="{23A9581E-8A94-47EF-9673-2A719CE9B53B}" WorkUnitID="{ACB6EA93-BD59-4339-9F5A-B66B97C1B951}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="level_newriver_play" ID="{0E24764E-12DF-4317-8E0F-1599AF69B35D}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="level_newriver_stop" ID="{A069FCC5-DABD-4B0B-B80B-428CF41F7D7E}" WorkUnitID="{9347299A-8678-47DE-9A39-076ED4811A22}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

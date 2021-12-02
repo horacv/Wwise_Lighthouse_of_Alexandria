@@ -117,6 +117,18 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{144F765A-270D-4A34-B93D-27058BE6D6C6}" ShortID="50871593">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Credits" ID="{1A234B20-9B33-44D5-AC9B-BBD512EDCC8C}" WorkUnitID="{D8CD3F95-CE50-4AC5-B9B5-FA09673404AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{BDB4B30D-0A59-4DA2-819F-9BF8E34F0D24}" ShortID="596531209">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
